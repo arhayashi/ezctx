@@ -1,0 +1,30 @@
+{
+    "name": "ezctx",
+    "version": "1.0.0",
+    "description": "Puts all of your source code into one or several `.txt` file(s), allowing you to easily paste it into an external AI platform instead of having to tediously upload each individual file.",
+    "license": "MIT",
+    "author": "zye123",
+    "type": "module",
+    "main": "dist/index.ts",
+    "bin": "./dist/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/arhayashi/ezctx.git"
+    },
+    "homepage": "https://github.com/arhayashi/ezctx#readme",
+    "scripts": {
+        "ezctx": "npx tsc && node ./dist/index.js"
+    },
+    "devDependencies": {
+        "@types/node": "^24.10.1",
+        "typescript": "^5.9.3"
+    },
+    "keywords": [
+        "context",
+        "ai",
+        "bundler"
+    ],
+    "files": [
+        "/dist"
+    ]
+}

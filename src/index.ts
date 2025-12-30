@@ -25,10 +25,6 @@ try {
     // creates visualization from the graph
     const visualization: string =
         "*** project structure ***\n\n" + visualizeGraph(graph) + "\n";
-    console.log(visualization);
-
-    // prints graph
-    console.log(JSON.stringify(graph, null, 2));
 
     // creates output directory; removes previous ones
     const finalOutDir: string = path.join(process.cwd(), outDir);

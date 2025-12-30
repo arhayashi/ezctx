@@ -1,4 +1,5 @@
 import fs from "node:fs/promises";
+import path from "node:path";
 import type { Config } from "../config.type.js";
 import outputFormatter from "./outputFormatter.js";
 
@@ -35,8 +36,7 @@ export default async function loadConfig(): Promise<Config> {
     let userConfig: Partial<Config>;
     const userConfigName: string | undefined = (
         await fs.readdir(process.cwd())
-    ).find((file) => file.includes("ezctx"));
-
+    ).find((file) => /.*ezctx.*\.json$/i.test(file));
     if (userConfigName) {
         userConfig = JSON.parse(await fs.readFile(userConfigName, "utf-8"));
     } else {

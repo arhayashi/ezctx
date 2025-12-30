@@ -1,6 +1,6 @@
 {
     "name": "ezctx",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Puts all of your source code into one or several `.txt` file(s), allowing you to easily paste it into an external AI platform instead of having to tediously upload each individual file.",
     "license": "MIT",
     "author": "zye123",
